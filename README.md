@@ -9,12 +9,15 @@
 
 다 같이 만들어나가는 스터디를 추구하고 있습니다. :smile:
 
-
+<br>
 
 ##  :calendar:Schedule
 
-
 🌈 모두가 함께 만들어가는 스터디 계획입니다.  
+
+<br>
+
+
 
 ##  :memo: 스터디 방법
 
@@ -37,7 +40,7 @@
 
 
 
-
+<br>
 
 ##  :green_book: 발표 가이드
 
@@ -48,7 +51,7 @@
 
 
 
-
+<br>
 
 ##  :heavy_exclamation_mark: Git 사용 규칙
 
