@@ -1,6 +1,6 @@
 const text = 'abcdefg bbb abcde abbb abc';
 const re = /abc/g;
-const newText = text.replace(re, 'hi');
+const newText = text.replace('abc', 'hi');
 console.log(text);
 console.log(newText);
 
@@ -35,7 +35,7 @@ console.log(text);
 console.log(newText);
 
 const text = 'wazzzzzup wazzzup wazzup wazup';
-const re = /waz{2,5}up/g;
+const re = /waz{2,}up/g;
 const newText = text.replace(re, '인싸');
 console.log(text);
 console.log(newText);
@@ -53,7 +53,7 @@ console.log(text);
 console.log(newText);
 
 const text = '1.   abc 	2.	abc	3.           abc 4.abc';
-const re = /\d.\s+d+/g;
+const re = /\d.\s+\w+/g;
 const newText = text.replace(re, '공백 있음');
 console.log(text);
 console.log(newText);
