@@ -8,7 +8,7 @@
 
       -  ex) 계산 결과를 사용할 때 미리 계산하여 결과만 파스 트리에 남겨 놓는다.
 
-         ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/48ac9ca7-500a-4e53-84dd-c004825c61f8/Untitled.png)
+         ![8-12 파스트리최적화하기](https://raw.githubusercontent.com/yujin-kim-92/typora-image/main/img/8-12%20%ED%8C%8C%EC%8A%A4%ED%8A%B8%EB%A6%AC%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EA%B8%B0.png)
 
       -  ex) 반복문 내에서 반복문이 수행될 때 결과에 변함이 없는 결과 ( 루프 불변 요소 loop invariant )는 반복문 밖에 임시 변수를 생성해서 결과를 저장하고 사용한다.
 
