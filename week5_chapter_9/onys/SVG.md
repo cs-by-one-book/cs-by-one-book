@@ -1,3 +1,11 @@
+jquery 딱히 쓸 이유 없어서 이제 안 쓰고요
+
+jsx 씁니다.
+
+https://ko.reactjs.org/docs/introducing-jsx.html
+
+
+
 ## SVG
 
 Scalable Vector Graphics 크기 변경이 가능한 벡터 그래픽스
@@ -55,3 +63,14 @@ JavaScript Object Notation
 ## 정리
 
 ![image-20211216195403401](SVG.assets/image-20211216195403401.png)
+
+<문서 받아올 때>
+
+통신 인터페이스: 라우터, 모뎀 등 서버랑 통신하기 위한 인터페이스 거쳐서
+
+언어 파서, 자바스크립트 인터프리터 등을 거쳐 DOM으로 렌더링
+
+사용자 인터페이스 엔진으로 출력된다.
+
+문서 보낼 때는 반대!
+
