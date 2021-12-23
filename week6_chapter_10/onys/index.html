@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="app2"></div>
+    <div id="app3"></div>
+    <div id="root" class="invisible">
+      <div string="동물이 짖습니까">
+        <div string="개"></div>
+        <div string="고양이"></div>
+      </div>
+    </div>
+    <div id="dialog"></div>
+    <div id="what-is-it" class="start-hidden">
+      <input id="what" type="text">
+      <button id="done-what">이름 입력 완료</button>
+    </div>
+
+    <div id="new-question" class="start-hidden">
+      <span id="new"></span>와(과) <span id="old"></span>를(을) 구분하기 위해 던질 수 있는 질문이 무엇입이까? 답은 "예"여야 합니다.
+      <input id="question" type="text">
+      <button id="doen-question">답 입력 완료</button>
+    </div>
+
+    <div id="yesno" class="start-hidden">
+      <button id="yes">예</button>
+      <button id="no">아니요</button>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
