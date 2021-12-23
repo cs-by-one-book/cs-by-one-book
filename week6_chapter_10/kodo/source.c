@@ -133,7 +133,7 @@ int main(int argc, char* argv[])
 							*p = '\0';
 
 						if (in == stdin)
-							(void)printf("What's a good question th at I could use to tell a %s from a %s?",
+							(void)printf("What's a good question that I could use to tell a %s from a %s?",
 								animal, (*current)->string);
 						fgets(question, sizeof(question), in);	// 새로운 질문을 입력
 
