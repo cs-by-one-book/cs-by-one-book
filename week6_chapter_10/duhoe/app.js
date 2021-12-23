@@ -49,7 +49,7 @@ restart();
 // 새 동물이 들어 있는 노드를 만들고,
 // 이 노드를 '아니요'에 해당하는 노드 바로 앞에 넣어서 '예'에 해당하는 노드가 되게 만듦
 // 그 후 다시 시작
-$('#done-question').addEventListner(click, () => {
+$('#done-question').click(function(){
   $(node).wrap('<div string="'+ $('#question').val() + '"></div>')
   $(node).parent().prepend('<div string="' + $('#what').val() + '"></div>')
   $('#dialog').append("<div>오 굳.<div><p>")
@@ -60,7 +60,7 @@ $('#done-question').addEventListner(click, () => {
 // 입력에 관련된 엘리먼트들을 없애고, 'new-question' 텍스트 필드와 '딥 입력 완료' 버튼이 보이게 만듦
 // 이전 동물과 새 동물 이름을 질문에 끼워 넣는다.
 
-$('#done-what').addEventListner(click, () => {
+$('#done-what').click(function(){
   $('#what-is-it').hide()
   $('#new').text($('#what').val())
   $('#old').text($(node).attr('string'))
@@ -72,7 +72,7 @@ $('#done-what').addEventListner(click, () => {
 // 현재 노드가 잎 노드가 아니면
 // 트리를 한 단계 내려가고, 잎 노드이면 처음부터 다시시작
 
-$('#yes').addEventListner(click, () => {
+$('#yes').click(function(){
   if (question($(node).children(':first-child'), '<i>예</i><br>')) {
     $('#dialog').append("<div>ㅋㅋ 그럴 줄 알았다.<div><p>")
     restart();
@@ -84,7 +84,7 @@ $('#yes').addEventListner(click, () => {
 // 트리를 한 단계 내려가고,
 // 잎 노드이면 예/아니요 버튼 감추고
 // what-is-it 텍스트 필드와 '이름 입력 완료' 버튼 표시
-$('#no').addEventListner(click, () => {
+$('#no').click(function(){
   if (question($(node).children(':last-child'), '<i>아니요</i><br>')) {
     $('#yesno').hide()
     $('#dialog').append("<div>모르겠음.. ㅠㅠ 뭐야 답 알려줘.. <div><p>")
