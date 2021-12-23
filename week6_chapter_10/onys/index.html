@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8">
     <title>Demo</title>
+    <!-- jquery 포함시키기 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <div id="app2"></div>
-    <div id="app3"></div>
+    <!-- 이 부분은 지식 트리이며 결코 표시되지 않는다. -->
     <div id="root" class="invisible">
       <div string="동물이 짖습니까">
         <div string="개"></div>
         <div string="고양이"></div>
       </div>
     </div>
-    <div id="dialog"></div>
+
+    <div id="dialog">
+      <!-- 대화가 여기 들어간다. -->
+    </div>
+
+    <!-- 새로운 동물 이름을 얻는 대화 -->
     <div id="what-is-it" class="start-hidden">
       <input id="what" type="text">
       <button id="done-what">이름 입력 완료</button>
     </div>
 
+    <!-- 새로운 동물에 대한 질문을 얻는 대화 -->
     <div id="new-question" class="start-hidden">
       <span id="new"></span>와(과) <span id="old"></span>를(을) 구분하기 위해 던질 수 있는 질문이 무엇입이까? 답은 "예"여야 합니다.
       <input id="question" type="text">
-      <button id="doen-question">답 입력 완료</button>
+      <button id="done-question">답 입력 완료</button>
     </div>
 
+    <!-- 예와 아니오 버튼 -->
     <div id="yesno" class="start-hidden">
       <button id="yes">예</button>
-      <button id="no">아니요</button>
+      <button id="no">아니오</button>
     </div>
     
+    <!-- <div>
+      <button id="test-button">테스트용 버튼</button>
+    </div> -->
     <script src="index.js"></script>
   </body>
 </html>
